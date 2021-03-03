@@ -1,0 +1,178 @@
+:root {
+    --main-blue: #16232E;
+    --light-blue: #63C3D1;
+    --alt-blue: #245060;
+    --fade-orange:rgba(235, 150, 108, 0.8);
+    --alt-orange:#D48158;
+}
+#logo{
+    background: url('../img/logoWood.png') transparent;
+    background-size: cover;
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    left: 75%;
+    /* top: -25%; */
+    overflow: hidden;
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    border-radius: 50%;
+}
+
+html {
+    height: 100%;
+    background: var(--main-blue);
+    background-size: auto 25vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 62.5%;
+    color: var(--main-blue);
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    padding-top: 17.5vh;
+
+}
+
+.container {
+    position: relative;
+    width: 66%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+header h1 {
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    padding: .4rem .6rem .6rem;
+    background: var(--light-blue);
+    font: normal 3.2rem "Monserrat", sans-serif;
+    color: white;
+    transform: rotate(-5deg);
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+}
+#frame{
+    float: right;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    right: 50%;
+}
+header h2 {
+    position: absolute;
+    top: -.5rem;
+    left: 5rem;
+    padding: .4rem 1rem .6rem 2rem;
+    background: var(--main-blue);
+    font: normal 2.4rem "Monserrat", sans-serif;
+    color: white;
+    transform: rotate(.5deg);
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+}
+
+header h2 span {
+    display: block;
+    position: absolute;
+    top: -0.75rem;
+    left: -3.75rem;
+    width: 5.2rem;
+    height: 5.2rem;
+    background: var(--alt-blue);
+    border-radius: 50%;
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .25);
+    line-height: 5.2rem;
+    text-align: center;
+    transform: rotate(7.5deg);
+}
+
+.content {
+    /* content: "❞";
+    font-family: 'icons'; */
+    min-height: 25vh;
+    /* background: white; */
+    box-shadow: .25rem .25rem 2.5rem var(--main-blue);
+    padding: 5rem 15rem 0rem 2rem;
+}
+#author{
+    font-family: 'Lobster', cursive;
+    color: var(--fade-orange);
+    text-indent:1.5rem;
+    font-size: 2.2rem;
+    line-height: 1.9;
+    min-height: 40px;
+    float: right;
+    margin: 0px;
+}
+#quote{
+    text-indent:1.5rem;
+    font-size: 2.2rem;
+    line-height: 1.9;
+    min-height: 75px;
+    /* display: inline; */
+    font-family: Baskerville, Georgia, serif;
+    font-style: italic;
+    color: var(--fade-orange);
+    margin-bottom: 0px;
+}
+#wrappQuote{
+    
+}
+blockquote:before {
+    border-left: 5px solid rgba(235, 150, 108, 0.1);
+    border-radius: 50%;
+    content: "";
+    height: 500px;
+    left: -50px;
+    position: absolute;
+    top: 0;
+    width: 500px;
+    z-index: -1;
+}
+#quote::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 1px;
+    margin: 0 auto 2.5rem;
+    /* background: var(--light-blue); */
+}
+
+
+.actions {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex: 1;
+    color: var(--fade-orange);
+}
+
+.actions button {
+    display: block;
+    min-width: 10rem;
+    margin: 0 .5rem;
+    padding: .5rem 1rem;
+    border: .1rem solid var(--alt-blue);
+    border-radius: .5rem;
+    background: var(--alt-blue);
+    font-size: 2rem;
+    color:var(--fade-orange);
+    cursor: pointer;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out, border-color .25s ease-in-out;
+}
+
+.actions button:hover {
+    color: var(--main-blue);
+    background-color: white;
+    border-color: var(--main-blue);
+}
+
+
+
+
+
+
