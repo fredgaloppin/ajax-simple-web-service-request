@@ -1,5 +1,7 @@
+# Consume a web service request
 
-https://fredgaloppin.github.io/ajax-simple-web-service-request/
+[Generate a random quote](https://fredgaloppin.github.io/ajax-simple-web-service-request/)
+
 
 Exercise: consume a web service via Ajax
 
